@@ -1,0 +1,34 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+*.egg-info/
+dist/
+.pytest_cache/
+.DS_Store
+
+# -----------------------------------------------------------------------
+# Never commit vendor binaries, firmware, or decompiled proprietary code.
+# These may contain copyrighted material owned by SensorPush / Nordic Semi.
+# -----------------------------------------------------------------------
+
+# Firmware images
+*.bin
+*.bin.gz
+*.hex
+*.elf
+*.out
+firmware/
+
+# Android packages and decompiled output
+*.apk
+*.dex
+apk/
+smali/
+jadx-output/
+
+# Any captured/extracted blobs
+*.pcap
+*.pcapng
+*.raw

@@ -1,0 +1,17 @@
+{
+  "domain": "sensorpush_ht1",
+  "name": "SensorPush HT1",
+  "version": "1.0.0",
+  "config_flow": true,
+  "documentation": "https://github.com/wxfield/ha-sensorpush-ht1",
+  "issue_tracker": "https://github.com/wxfield/ha-sensorpush-ht1/issues",
+  "dependencies": ["bluetooth"],
+  "bluetooth": [
+    {
+      "service_uuid": "ef090000-11d6-42ba-93b8-9dd7ec090aa9"
+    }
+  ],
+  "codeowners": ["@wxfield"],
+  "iot_class": "local_push",
+  "requirements": []
+}

@@ -1,0 +1,22 @@
+{
+  "integration": "mdi:thermometer-bluetooth",
+  "entity": {
+    "sensor": {
+      "temperature": {
+        "default": "mdi:thermometer"
+      },
+      "humidity": {
+        "default": "mdi:water-percent"
+      },
+      "rssi": {
+        "default": "mdi:bluetooth-audio"
+      },
+      "battery": {
+        "default": "mdi:battery-bluetooth"
+      },
+      "battery_voltage": {
+        "default": "mdi:battery-medium"
+      }
+    }
+  }
+}

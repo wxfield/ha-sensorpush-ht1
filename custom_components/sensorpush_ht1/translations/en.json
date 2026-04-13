@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "confirm": {
+        "title": "SensorPush HT1 Found",
+        "description": "Do you want to add **{name}** ({address}) to Home Assistant?\n\nThis device broadcasts temperature and humidity passively — no pairing or cloud account required."
+      }
+    },
+    "abort": {
+      "already_configured": "This SensorPush HT1 is already configured.",
+      "not_ht1": "This device does not appear to be a SensorPush HT1.",
+      "use_bluetooth_discovery": "SensorPush HT1 devices are discovered automatically via Bluetooth. Make sure the sensor is powered and in range."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "SensorPush HT1 Options",
+        "data": {
+          "gatt_poll_interval": "GATT poll interval (minutes)"
+        },
+        "data_description": {
+          "gatt_poll_interval": "How often to connect via Bluetooth to read battery and download history. Default is 30 minutes. Minimum is 5 minutes."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "temperature": {
+        "name": "Temperature"
+      },
+      "humidity": {
+        "name": "Humidity"
+      },
+      "rssi": {
+        "name": "Signal Strength"
+      },
+      "battery": {
+        "name": "Battery"
+      },
+      "battery_voltage": {
+        "name": "Battery Voltage"
+      }
+    }
+  }
+}
